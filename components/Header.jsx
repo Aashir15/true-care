@@ -52,7 +52,7 @@ export default function Header2() {
         {/* Desktop Header */}
         <div className="hidden lg:block">
           {/* Main content */}
-          <div className="px-[39px] pt-[35px] max-w-7xl mx-auto">
+          <div className="px-[39px] pt-[35px] max-w-300 mx-auto">
             <div className="flex items-start justify-between">
               {/* Logo */}
               <Link
@@ -113,7 +113,7 @@ export default function Header2() {
             aria-label="Main navigation"
             className="h-[43px] border-y border-[#dddddd] "
           >
-            <div className="flex h-full items-center pl-[58px] max-w-7xl mx-auto">
+            <div className="flex h-full items-center pl-[58px] max-w-300 mx-auto">
               {navLinks.map((link, index) => (
                 <div
                   key={link.name}

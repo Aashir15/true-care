@@ -35,16 +35,14 @@ export default function Benefits() {
   return (
     <>
       <section className="px-6 py-12 bg-(--bg-color)">
-        <div className="mx-auto grid max-w-7xl items-center md:grid-cols-2">
+        <div className="mx-auto grid max-w-300 items-center md:grid-cols-2">
           <div>
-            <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl xl:text-[68px]">
-              TruCare
-              <span className="mt-2 block text-(--primary-color)">
-                Benefits
-              </span>
+            <h1 className="text-4xl font-bold mb-8 leading-[1.05] tracking-tight text-neutral-950 md:text-[45px]">
+              TruCare{" "}
+              <span className="mt-2 text-(--primary-color)">Benefits</span>
             </h1>
 
-            <p className="mb-8 leading-7 text-neutral-500 text-lg">
+            <p className="mb-8 leading-7 text-xl">
               Own better coverage on purchases! TruCare Plans protect your newly
               purchased products from the unexpected mishaps of everyday use,
               allowing YOU to extend your product life while giving you the
@@ -74,11 +72,11 @@ export default function Benefits() {
         <div className="mx-auto max-w-6xl">
           {/* Heading */}
           <div className="text-center">
-            <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl xl:text-[68px]">
-              Why TruCare
-              <span className="mt-2 block text-(--primary-color)">
-                Protection?
-              </span>
+          
+
+            <h1 className="text-4xl font-bold mb-8 leading-[1.05] tracking-tight text-neutral-950 md:text-[45px]">
+              <span className="mt-2 block text-(--primary-color)">Why TruCare</span>
+              Protection?
             </h1>
           </div>
 

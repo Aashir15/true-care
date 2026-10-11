@@ -86,14 +86,14 @@ export default function Page() {
       </div>
 
       <section className="px-6 md:py-18 bg-(--bg-color)">
-        <div className="mx-auto max-w-7xl">
-          <p className="text-2xl font-semibold leading-7 text-neutral-600">
+        <div className="mx-auto max-w-300">
+          <p className="text-2xl font-semibold leading-7 text-[#393D45]">
             Designed to cover customers from daily unexpected failures and
             mishaps. TruCare Plans come with no Surprise Cost and expert service
             that provides your customer with Peace of Mind Protection!
           </p>
 
-          <p className="mt-5 text-2xl font-semibold leading-7 text-neutral-600">
+          <p className="mt-5 text-2xl font-semibold leading-7 text-[#393D45]">
             TruCare Protection was created by a team of protection plan &
             service industry experts! Protection Plans for Appliances,
             Electronics & Furnitures
@@ -102,7 +102,7 @@ export default function Page() {
       </section>
 
       <section className="px-6 py-6 bg-(--bg-color)">
-        <div className="mx-auto grid max-w-7xl items-center md:grid-cols-2">
+        <div className="mx-auto grid max-w-300 items-center md:grid-cols-2">
           <figure className="relative">
             <div aria-hidden="true" />
 
@@ -126,10 +126,7 @@ export default function Page() {
 
             <ul className="list-disc space-y-2 pl-5">
               {protectionBenefits.map((item) => (
-                <li
-                  key={item}
-                  className="text-lg font-medium leading-6 text-neutral-500"
-                >
+                <li key={item} className="text-lg leading-6 text-[#7C7C7E]">
                   {item}
                 </li>
               ))}
@@ -139,11 +136,11 @@ export default function Page() {
       </section>
 
       <section className="px-6 py-6 bg-(--bg-color)">
-        <div className="mx-auto grid max-w-7xl items-center md:grid-cols-2">
+        <div className="mx-auto grid max-w-300 items-center md:grid-cols-2">
           <div>
             <h2 className="heading mb-5 max-w-xl">Remote Diagnostics</h2>
 
-            <p className="mb-8 max-w-xl text-lg leading-7 text-neutral-600">
+            <p className="mb-8 max-w-xl text-lg leading-7 text-[#7C7C7E]">
               With TruCare´s remote diagnostics technology, technicians see
               precisely what de customer sees to better understand the product´s
               space and layout in the home without physically being at the
@@ -171,19 +168,16 @@ export default function Page() {
       </section>
 
       <section className="pt-16 px-6 pt-8 bg-(--bg-color)">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-300">
           <div>
-            <h2 className="heading mb-5">
+            <h2 className="text-[27px] font-medium text-[#393D45] mb-5">
               Our Remote Diagnostics to our in-home service capabilities provide
               our partners and customers with the following:
             </h2>
 
             <ul className="list-disc space-y-2 pl-5">
               {protectionBenefits2.map((item) => (
-                <li
-                  key={item}
-                  className="text-lg font-medium leading-6 text-neutral-500"
-                >
+                <li key={item} className="text-lg leading-6 text-[#7C7C7E]">
                   {item}
                 </li>
               ))}
@@ -193,7 +187,7 @@ export default function Page() {
       </section>
 
       <section className="px-6 py-6 bg-(--bg-color)">
-        <div className="mx-auto grid max-w-7xl items-center md:grid-cols-2">
+        <div className="mx-auto grid max-w-300 items-center md:grid-cols-2">
           <figure className="relative">
             <div aria-hidden="true" />
 
@@ -216,7 +210,7 @@ export default function Page() {
                 <li key={item.name} className="mb-6">
                   <Link
                     href={item.href}
-                    className="flex items-start gap-3 text-sm font-medium leading-6 text-neutral-800 transition-colors duration-300 sm:text-base"
+                    className="flex items-start gap-3 text-lg font-medium leading-6 text-neutral-800 transition-colors duration-300"
                   >
                     <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full">
                       <CircleCheckBig
@@ -237,8 +231,8 @@ export default function Page() {
       </section>
 
       <section className="px-6 py-16 md:py-20">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="heading mb-5 text-center">
+        <div className="mx-auto max-w-300">
+          <h2 className="heading mb-5 text-center text-[#FF1E27]">
             TruCare Protection Partners
           </h2>
 

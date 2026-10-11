@@ -37,18 +37,17 @@ export default async function PlanDetailsPage({ params }) {
   return (
     <main className="bg-(--bg-color)">
       <section className="px-6 py-12 md:py-16">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-300">
           <section className="">
-            <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2 lg:gap-16">
+            <div className="mx-auto grid max-w-300 items-center md:grid-cols-2">
               <div>
-                <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl xl:text-[68px]">
-                  {plan.title}
-                  <span className="mt-2 block text-(--primary-color)">
-                    Coverage
-                  </span>
+
+                <h1 className="text-4xl font-bold mb-8 leading-[1.05] tracking-tight text-neutral-950 md:text-[45px]">
+                   {plan.title}{" "}
+                  <span className="mt-2 block text-(--primary-color)">Coverage</span>
                 </h1>
 
-                <p className="mb-2 leading-7 text-neutral-500 text-lg">
+                <p className="mb-2 leading-7 text-xl">
                   {plan.description}
                 </p>
               </div>

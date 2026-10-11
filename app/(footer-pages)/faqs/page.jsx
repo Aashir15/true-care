@@ -87,7 +87,7 @@ export default function FAQPage() {
       </section>
 
       <section className="bg-[#e2e2e2] px-6 py-12 md:py-20">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-300">
           <div className="space-y-3">
             {faqs.map((faq, index) => {
               const isOpen = openIndex === index;
@@ -102,8 +102,8 @@ export default function FAQPage() {
                       className="flex w-full items-center justify-between gap-6 px-5 py-5 text-left sm:px-6"
                     >
                       <span
-                        className={`text-base font-semibold leading-6 transition-colors duration-300 sm:text-lg ${
-                          isOpen ? "text-red-600" : "text-neutral-950"
+                        className={`leading-6 transition-colors duration-300 text-lg ${
+                          isOpen ? "text-red-600" : "text-neutral-600"
                         }`}
                       >
                         {faq.question}

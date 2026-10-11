@@ -14,20 +14,18 @@ export default function PlansPage() {
   return (
     <>
       <section className="px-6 pt-12 bg-(--bg-color) ">
-        <div className="mx-auto grid max-w-7xl items-center md:grid-cols-2">
+        <div className="mx-auto grid max-w-300 items-center md:grid-cols-2">
           <div>
-            <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl xl:text-[68px]">
+            <h1 className="text-4xl font-bold mb-8 leading-[1.05] tracking-tight text-neutral-950 md:text-[45px]">
               Plan <span className="mt-2 text-(--primary-color)">Options</span>
             </h1>
 
-            <p className="mb-2 leading-7 text-neutral-500 text-lg">
+            <p className="mb-2 leading-7 text-xl">
               TruCare Protection is a Protection Plan Program that provides
               value-added features and benefits for retailers and their
-              customers.
-            </p>
-            <p className="mb-8 leading-7 text-neutral-500 text-lg">
-              These programs provide unique coverage and exceptional value to
-              your customers while they differentiate you from your competition.
+              customers. These programs provide unique coverage and exceptional
+              value to your customers while they differentiate you from your
+              competition.
             </p>
           </div>
 
@@ -50,11 +48,12 @@ export default function PlansPage() {
       </section>
 
       <section className="py-14 md:py-20 bg-(--bg-color)">
-        <div className="mx-auto max-w-7xl px-6">
-          <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-center text-neutral-950 sm:text-5xl lg:text-6xl xl:text-[68px]">
-            <span className="mt-2 text-(--primary-color)">Protection Plan </span>
-            Options {" "}
+        <div className="mx-auto max-w-300 px-6">
+          <h1 className="text-4xl text-center font-bold mb-8 leading-[1.05] tracking-tight text-neutral-950 md:text-[45px]">
+            Protection Plan{" "}
+            <span className="mt-2 block text-(--primary-color)">Options</span>
           </h1>
+
           <div className="grid gap-6 md:grid-cols-2">
             {planList.map((plan) => (
               <Link
