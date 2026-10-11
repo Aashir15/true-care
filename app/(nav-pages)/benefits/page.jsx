@@ -44,7 +44,7 @@ export default function Benefits() {
               </span>
             </h1>
 
-            <p className="mb-8 text-base leading-7 text-neutral-600 md:text-lg">
+            <p className="mb-8 leading-7 text-neutral-500 text-lg">
               Own better coverage on purchases! TruCare Plans protect your newly
               purchased products from the unexpected mishaps of everyday use,
               allowing YOU to extend your product life while giving you the
@@ -88,7 +88,7 @@ export default function Benefits() {
               {leftBenefits.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-3 text-[17px] leading-7 text-neutral-950"
+                  className="flex items-start gap-3 text-lg leading-7 text-neutral-950"
                 >
                   <i
                     className="ri-arrow-right-s-line mt-[2px] text-xl text-(--primary-color)"
@@ -103,7 +103,7 @@ export default function Benefits() {
               {rightBenefits.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-3 text-[17px] leading-7 text-neutral-950"
+                  className="flex items-start gap-3 text-lg leading-7 text-neutral-950"
                 >
                   <i
                     className="ri-arrow-right-s-line mt-[2px] text-xl text-(--primary-color)"
@@ -131,7 +131,7 @@ export default function Benefits() {
                 Experience
               </h3>
 
-              <p className="max-w-[260px] text-[18px] leading-[1.5] text-black">
+              <p className="max-w-[260px] text-lg leading-[1.5] text-black">
                 TruCare has over 40 years of service plan Warranty experience
                 serving the industry.
               </p>
@@ -183,7 +183,7 @@ export default function Benefits() {
                 Nationwide
               </h3>
 
-              <p className="max-w-[270px] text-[18px] leading-[1.5] text-black">
+              <p className="max-w-[270px] text-lg leading-[1.5] text-black">
                 TruCare offers nationwide service for various products. We
                 provide coverage in more than 85% of zip codes within available
                 areas, including all metro.
@@ -214,7 +214,7 @@ export default function Benefits() {
                 <span className="block">on Shopify</span>
               </h2>
 
-              <p className="mt-8 text-[16px] font-bold text-center uppercase text-[#ff0033] sm:text-[17px]">
+              <p className="mt-8 text-[16px] font-bold text-center uppercase text-[#ff0033] sm:text-lg">
                 Install the app today!
               </p>
             </header>

@@ -85,15 +85,15 @@ export default function Page() {
         <Hero />
       </div>
 
-      <section className="px-6 py-18 bg-(--bg-color)">
+      <section className="px-6 md:py-18 bg-(--bg-color)">
         <div className="mx-auto max-w-7xl">
-          <p className="text-xl font-semibold leading-7 text-neutral-600">
+          <p className="text-2xl font-semibold leading-7 text-neutral-600">
             Designed to cover customers from daily unexpected failures and
             mishaps. TruCare Plans come with no Surprise Cost and expert service
             that provides your customer with Peace of Mind Protection!
           </p>
 
-          <p className="mt-5 text-xl font-semibold leading-7 text-neutral-600">
+          <p className="mt-5 text-2xl font-semibold leading-7 text-neutral-600">
             TruCare Protection was created by a team of protection plan &
             service industry experts! Protection Plans for Appliances,
             Electronics & Furnitures
@@ -128,7 +128,7 @@ export default function Page() {
               {protectionBenefits.map((item) => (
                 <li
                   key={item}
-                  className="text-sm font-medium leading-6 text-neutral-500 sm:text-base"
+                  className="text-lg font-medium leading-6 text-neutral-500"
                 >
                   {item}
                 </li>
@@ -143,7 +143,7 @@ export default function Page() {
           <div>
             <h2 className="heading mb-5 max-w-xl">Remote Diagnostics</h2>
 
-            <p className="mb-8 max-w-xl text-base leading-7 text-neutral-600 md:text-lg">
+            <p className="mb-8 max-w-xl text-lg leading-7 text-neutral-600">
               With TruCare´s remote diagnostics technology, technicians see
               precisely what de customer sees to better understand the product´s
               space and layout in the home without physically being at the
@@ -182,7 +182,7 @@ export default function Page() {
               {protectionBenefits2.map((item) => (
                 <li
                   key={item}
-                  className="text-sm font-medium leading-6 text-neutral-500 sm:text-base"
+                  className="text-lg font-medium leading-6 text-neutral-500"
                 >
                   {item}
                 </li>

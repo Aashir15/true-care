@@ -20,12 +20,12 @@ export default function PlansPage() {
               Plan <span className="mt-2 text-(--primary-color)">Options</span>
             </h1>
 
-            <p className="mb-2 text-base leading-7 text-neutral-600 md:text-lg">
+            <p className="mb-2 leading-7 text-neutral-500 text-lg">
               TruCare Protection is a Protection Plan Program that provides
               value-added features and benefits for retailers and their
               customers.
             </p>
-            <p className="mb-8 text-base leading-7 text-neutral-600 md:text-lg">
+            <p className="mb-8 leading-7 text-neutral-500 text-lg">
               These programs provide unique coverage and exceptional value to
               your customers while they differentiate you from your competition.
             </p>

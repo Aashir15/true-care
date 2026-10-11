@@ -5,6 +5,73 @@ import { useState } from "react";
 import Image from "next/image";
 export default function Contact() {
   const [interest, setInterest] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [status, setStatus] = useState({
+    type: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    setIsSubmitting(true);
+
+    setStatus({
+      type: "",
+      message: "",
+    });
+
+    const payload = {
+      companyName: formData.get("companyName"),
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      email: formData.get("email"),
+      address: formData.get("address"),
+      city: formData.get("city"),
+      zipCode: formData.get("zipCode"),
+      state: formData.get("state"),
+      interest: formData.get("interest"),
+      businessType: formData.getAll("businessType"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Unable to send message.");
+      }
+
+      setStatus({
+        type: "success",
+        message: "Message sent successfully.",
+      });
+
+      form.reset();
+      setInterest("");
+    } catch (error) {
+      console.error(error);
+
+      setStatus({
+        type: "error",
+        message: error.message || "Something went wrong. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const dealerOptions = [
     "Cell Phone Store",
@@ -63,7 +130,7 @@ export default function Contact() {
 
           <div className="mt-8 max-w-[600px] mx-auto">
             {/* Form */}
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="companyName" className="sr-only">
                   Company Name
@@ -272,11 +339,49 @@ export default function Contact() {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="rounded-full bg-(--primary-color) px-7 py-2.5 text-[14px] font-semibold uppercase text-white transition-colors hover:bg-[#d91823]"
+                  disabled={isSubmitting}
+                  className="
+            inline-flex min-w-[150px] items-center justify-center gap-2
+            rounded-full bg-(--primary-color)
+            px-7 py-2.5
+            text-[14px] font-semibold uppercase text-white
+            transition-all duration-300
+            hover:bg-[#d91823]
+            disabled:cursor-not-allowed
+            disabled:opacity-70
+        "
                 >
-                  Send Message
+                  {isSubmitting && (
+                    <span
+                      aria-hidden="true"
+                      className="
+                    h-4 w-4
+                    animate-spin
+                    rounded-full
+                    border-2 border-white/40
+                    border-t-white
+                "
+                    />
+                  )}
+
+                  <span className="transition-all duration-300">
+                    {isSubmitting ? "Sending..." : "Send Message"}
+                  </span>
                 </button>
               </div>
+
+              {status.message && (
+                <p
+                  role="status"
+                  className={`text-center text-sm font-medium ${
+                    status.type === "success"
+                      ? "text-green-600"
+                      : "text-red-600"
+                  }`}
+                >
+                  {status.message}
+                </p>
+              )}
             </form>
           </div>
         </div>

@@ -17,7 +17,7 @@ body {
 
 @layer components {
   .heading {
-    @apply text-3xl leading-tight tracking-tight text-gray-700 sm:text-4xl;
+    @apply text-3xl leading-tight tracking-tight text-gray-700 sm:text-5xl;
   }
 }
 

@@ -14,13 +14,13 @@ export default function PrivacyPolicyPage() {
               OVERVIEW
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               TruCare Protection builds products to improve customer
               experiences, and we believe that ensuring your data and privacy is
               secure is an integral part of a great customer experience.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               The resources and links to your left provide information about
               your rights under the GDPR and CCPA as well as how to exercise
               them. If you are unable to find what you are looking for, please
@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
               Introduction
             </h3>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               This privacy and cookie policy (&ldquo;Policy&rdquo;) describes
               how TruCare Protection (&ldquo;TruCare Protection&rdquo;,
               &rdquo;we,&rdquo; and &ldquo;our&rdquo;) collects, uses and shares
@@ -61,14 +61,14 @@ export default function PrivacyPolicyPage() {
               Particularly Important Information
             </h3>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Who we are:</strong> For the
               purpose of applicable data protection legislation, the data
               controller of your personal data is TruCare Protection, Inc. of
               579 Broadway, 2C, New York, New York 10012.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">
                 Changes to this Policy:
               </strong>{" "}
@@ -88,11 +88,11 @@ export default function PrivacyPolicyPage() {
               1. COLLECTING YOUR PERSONAL DATA
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We collect information about you in the following ways:
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Sources.</strong> We collect
               personal data from the following sources:
             </p>
@@ -173,7 +173,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Some of our automatic data collection is facilitated by cookies
               and similar technologies. Please see Section 2 for more
               information.
@@ -190,7 +190,7 @@ export default function PrivacyPolicyPage() {
               What are cookies?
             </h3>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We may collect information using &ldquo;cookies.&rdquo; Cookies
               are small data files placed on your computer when you visit a
               website. We may use both session cookies (which expire once you
@@ -199,7 +199,7 @@ export default function PrivacyPolicyPage() {
               with a more personal and interactive experience on our Apps.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               In addition to cookies, our Apps and emails may use pixel tags
               (also known as web beacons and clear GIFs) to compile statistics
               about use of the Services, measure the success of our marketing
@@ -211,31 +211,31 @@ export default function PrivacyPolicyPage() {
               Cookies we use
             </h3>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Our Apps use the following types of cookies for the purposes set
               out below:
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">
                 Type of cookies &amp; purpose
               </strong>
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Essential Cookies:</strong>{" "}
               These cookies are necessary to allow the technical operation of
               our Apps (e.g., they enable you to move around on a website and to
               use its features).
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Functionality Cookies:</strong>{" "}
               These cookies enhance the performance and functionality of our
               Apps.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Analytics Cookies:</strong>{" "}
               These cookies help us understand how our Apps are performing and
               being used. These cookies may work with web beacons included in
@@ -265,7 +265,7 @@ export default function PrivacyPolicyPage() {
               </a>
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Advertising Cookies:</strong>{" "}
               These cookies are used by advertising companies to collect
               information about how you use our Apps and other websites over
@@ -278,7 +278,7 @@ export default function PrivacyPolicyPage() {
               Disabling cookies
             </h3>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               You can typically remove or reject cookies via your browser
               settings. In order to do this, follow the instructions provided by
               your browser (usually located within the &ldquo;settings,&rdquo;
@@ -287,7 +287,7 @@ export default function PrivacyPolicyPage() {
               change your settings.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Further information about cookies, including how to see what
               cookies have been set on your computer or mobile device and how to
               manage and delete them, visit{" "}
@@ -311,7 +311,7 @@ export default function PrivacyPolicyPage() {
               , or our Online Tracking Opt-out Guide.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               If you do not accept our cookies, you may experience some
               inconvenience in your use of our Apps. For example, we may not be
               able to recognize your computer or mobile device and you may need
@@ -325,7 +325,7 @@ export default function PrivacyPolicyPage() {
               3. DO NOT TRACK SIGNALS
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Some Internet browsers may be configured to send &ldquo;Do Not
               Track&rdquo; signals to the online services that you visit. We
               currently do not respond to do not track signals. To find out more
@@ -348,11 +348,11 @@ export default function PrivacyPolicyPage() {
               4. USING YOUR PERSONAL DATA
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We may use your personal data as follows:
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Operations:</strong>
             </p>
 
@@ -469,11 +469,11 @@ export default function PrivacyPolicyPage() {
               5. SHARING YOUR PERSONAL DATA
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We may share your personal data as follows:
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">
                 Insurers and Third Party Administrators.
               </strong>{" "}
@@ -483,7 +483,7 @@ export default function PrivacyPolicyPage() {
               they can provide and underwrite and administer such warranties.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">
                 Our Third Party Service Providers.
               </strong>{" "}
@@ -494,20 +494,20 @@ export default function PrivacyPolicyPage() {
               similar services.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Advertising Partners.</strong>{" "}
               Our third party advertising partners may collect information about
               your activity on our Apps and other online services to help us
               advertise our Services.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Affiliates.</strong> We may
               share personal data with our affiliates, in which case we will
               require our affiliates to comply with this Policy.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">
                 Corporate Restructuring.
               </strong>{" "}
@@ -518,7 +518,7 @@ export default function PrivacyPolicyPage() {
               proceeding.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Legal Compliance.</strong> We
               may share personal data as we believe necessary or appropriate:
               (a) to comply with applicable laws; and (b) to comply with lawful
@@ -527,7 +527,7 @@ export default function PrivacyPolicyPage() {
               enforcement requirements.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">
                 Compliance, Fraud Prevention and Safety.
               </strong>{" "}
@@ -547,7 +547,7 @@ export default function PrivacyPolicyPage() {
               6. ANONYMOUS, AGGREGATED OR DE-IDENTIFIED DATA
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We may create anonymous, aggregated or de-identified data from the
               personal data we receive about you and other individuals whose
               personal data we collect. We make personal data into anonymous,
@@ -564,7 +564,7 @@ export default function PrivacyPolicyPage() {
               7. USER GENERATED CONTENT
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We may make available on our Apps or through our Service, or link
               to, features that allow you to generate your own content or share
               information online (e.g., on our blog). Please do not embed
@@ -590,7 +590,7 @@ export default function PrivacyPolicyPage() {
               8. INTERNATIONAL DATA TRANSFER
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Your information, including personal data that we collect from
               you, may be transferred to, stored at and processed by us or our
               service providers outside the country in which you reside,
@@ -603,7 +603,7 @@ export default function PrivacyPolicyPage() {
               to TruCare Protection in the United States.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               VeraSafe has been appointed as TruCare Protection&apos;s
               representative in the European Union for data protection matters,
               pursuant to Article 27 of the General Data Protection Regulation
@@ -629,7 +629,7 @@ export default function PrivacyPolicyPage() {
               .
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Alternatively, VeraSafe can be contacted at: VeraSafe Ireland Ltd.
               Unit 3D North Point House North Point Business Park New Mallow
               Road Cork T23AT2P Ireland
@@ -642,7 +642,7 @@ export default function PrivacyPolicyPage() {
               9. EU-U.S. PRIVACY SHIELD AND SWISS-U.S. PRIVACY SHIELD
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               TruCare Protection complies with the EU-U.S. and the Swiss-U.S.
               Privacy Shield Frameworks as set forth by the U.S. Department of
               Commerce regarding the collection, use, and retention of personal
@@ -665,7 +665,7 @@ export default function PrivacyPolicyPage() {
               .
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               TruCare Protection may transfer your personal information to third
               parties as described in this Privacy Policy. TruCare Protection
               maintains contracts with its third-party service providers
@@ -676,7 +676,7 @@ export default function PrivacyPolicyPage() {
               rise to the damage.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               In compliance with the Privacy Shield Principles, TruCare
               Protection commits to resolve complaints about our collection or
               use of your personal information. European individuals with
@@ -712,7 +712,7 @@ export default function PrivacyPolicyPage() {
               .
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               TruCare Protection may be required to disclose personal data in
               response to lawful requests by public authorities, including to
               meet national security or law enforcement requirements. The
@@ -730,7 +730,7 @@ export default function PrivacyPolicyPage() {
               10. SECURITY
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We seek to use reasonable organizational, technical and
               administrative measures to protect personal data within our
               organization. Unfortunately, no transmission or storage system can
@@ -750,7 +750,7 @@ export default function PrivacyPolicyPage() {
               11. RETENTION
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We will only retain your personal data as long as reasonably
               required for you to use the Apps and/or to provide you with the
               Services unless a longer retention period is required or permitted
@@ -764,7 +764,7 @@ export default function PrivacyPolicyPage() {
               12. SENSITIVE PERSONAL DATA
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We do not collect sensitive personal data as that term is defined
               by the GDPR (with respect to European users) or other applicable
               law.
@@ -777,7 +777,7 @@ export default function PrivacyPolicyPage() {
               13. JOB APPLICANTS
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               When you visit the careers portion of our website, we collect the
               information that you provide to us in connection with your job
               application. This includes business and personal contact
@@ -798,7 +798,7 @@ export default function PrivacyPolicyPage() {
               14. YOUR RIGHTS
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Depending on the jurisdiction in which you are located, you may
               have the following rights with respect to your personal data:
             </p>
@@ -840,7 +840,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               If you wish to submit a request to exercise any of these rights,
               please contact us using the details in Section 17 below. In your
               request, please make clear: (i) what personal data is concerned;
@@ -866,7 +866,7 @@ export default function PrivacyPolicyPage() {
               15. COMPLAINTS
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We are committed to resolve any complaints about our collection or
               use of your personal data. If you would like to make a complaint
               regarding this Policy or our practices in relation to your
@@ -887,68 +887,68 @@ export default function PrivacyPolicyPage() {
               16. LEGAL BASES FOR PROCESSING
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Please note that this section applies only to individuals located
               in Europe.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We have listed in the table below our legal bases for processing
               the personal data described in this Policy.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Legal basis:</strong>
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Details regarding each processing purpose listed below are
               provided in the section above titled &ldquo;Using Your Personal
               Data&rdquo;.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Operations:</strong>
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Processing is necessary to perform the contract governing our
               provision of the Services or to take steps that you request prior
               to signing up for or otherwise engaging with the Services.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               In other cases, these activities constitute our legitimate
               interests.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">
                 Marketing, Research and development, Compliance, fraud
                 prevention and safety:
               </strong>
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               These activities constitute our legitimate interests. We do not
               use your personal information for these activities where the
               impact on you would override our interests (unless we have your
               consent or are otherwise required or permitted to by law).
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Legal compliance:</strong>
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Processing is necessary to comply with our legal obligations.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Consent:</strong>
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Processing is based on your consent. Where we rely on your consent
               you have the right to withdraw it any time in the manner indicated
               when you consent or in the Service.
@@ -961,7 +961,7 @@ export default function PrivacyPolicyPage() {
               17. CONTACT INFORMATION
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We welcome your comments or questions about this Policy. You may
               contact us in writing at{" "}
               <a
@@ -980,7 +980,7 @@ export default function PrivacyPolicyPage() {
               18. NOTICE TO CALIFORNIA RESIDENTS
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               We are required by the California Consumer Privacy Act of 2018
               (&ldquo;CCPA&rdquo;) to provide to California residents an
               explanation of how we collect, use and share their personal
@@ -988,7 +988,7 @@ export default function PrivacyPolicyPage() {
               residents regarding our handling of their personal information.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Under the CCPA, this Notice to California Residents and the
               privacy practices and rights it describes do not apply to the
               information we collect, use or disclose about our business
@@ -996,7 +996,7 @@ export default function PrivacyPolicyPage() {
               Merchants and Insurers).
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Privacy Practices.</strong> We
               do not sell personal information. As we explain in our policy:
             </p>
@@ -1019,11 +1019,11 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Here is a description of our relevant privacy practices:
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Please note that we may also disclose personal information to our
               affiliates and third party service providers, in connection with
               corporate restructuring, to comply with law, or for compliance,
@@ -1031,7 +1031,7 @@ export default function PrivacyPolicyPage() {
               Section 5 of our Policy.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Privacy Rights.</strong> Except
               as excluded above, the CCPA grants California residents the
               following rights:
@@ -1058,7 +1058,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Please note that the CCPA limits these rights by, for example,
               prohibiting us from providing certain sensitive information in
               response to an access request and limiting the circumstances in
@@ -1066,12 +1066,12 @@ export default function PrivacyPolicyPage() {
               request, we will communicate our decision to you.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               You are entitled to exercise the rights described above free from
               discrimination.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">
                 How to Submit a Request.
               </strong>{" "}
@@ -1099,14 +1099,14 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Identity verification.</strong>{" "}
               The CCPA requires us to verify the identity of the individual
               submitting a request to access or delete personal information
               before providing a substantive response to the request.
             </p>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               <strong className="text-taupe-500">Authorized agents.</strong>{" "}
               California residents can empower an &ldquo;authorized agent&rdquo;
               to submit requests on their behalf. We will require the authorized
@@ -1120,7 +1120,7 @@ export default function PrivacyPolicyPage() {
               Online Tracking Opt-Out Guide
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Like many companies online, we use services provided by Google,
               Facebook and other companies that use tracking technology. These
               services rely on tracking technologies – such as cookies and web
@@ -1281,7 +1281,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Note that because these opt-out mechanisms are specific to the
               device or browser on which they are exercised, you will need to
               opt-out on every browser and device that you use.
@@ -1297,7 +1297,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Biometric Information
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               An individual&apos;s physiological, biological or behavioral
               characteristics, including an individual&apos;s deoxyribonucleic
               acid (DNA), that can be used, singly or in combination with each
@@ -1314,7 +1314,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Commercial Information
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Records of personal property, products or services purchased,
               obtained, or considered, or other purchasing or consuming
               histories or tendencies.
@@ -1323,7 +1323,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Education Information
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Personal information from an educational record, which could
               include: a student&apos;s name, the names of the student&apos;s
               parent or other family members, the address of a student or
@@ -1343,7 +1343,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Financial Information
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Bank account number, debit or credit card numbers, insurance
               policy number, and other financial information.
             </p>
@@ -1351,7 +1351,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Geolocation Data
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Precise location, e.g., derived from GPS coordinates or telemetry
               data
             </p>
@@ -1359,7 +1359,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Identifiers
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Real name, alias, postal address, unique personal identifier,
               customer number, email address, account name, social security
               number, driver&apos;s license number, passport number, or other
@@ -1369,7 +1369,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Inferences
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               The derivation of information, data, assumptions, or conclusions
               from any other category of Personal Information to create a
               profile about a person reflecting the person&apos;s preferences,
@@ -1380,7 +1380,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Internet or Network Information
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Browsing history, search history, and information regarding a
               person&apos;s interaction with an Internet website, application,
               or advertisement.
@@ -1389,7 +1389,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Medical Information
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Personal information about an individual&apos;s health or
               healthcare, including health insurance information. Does not
               include (a) medical information governed by California&apos;s
@@ -1403,7 +1403,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Online Identifiers
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               An online identifier or other persistent identifier that can be
               used to recognize a person, family or device, over time and across
               different services, including but not limited to, a device
@@ -1419,7 +1419,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Physical Description
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               An individual&apos;s physical characteristics or description
               (e.g., hair color, eye color, height, weight).
             </p>
@@ -1427,7 +1427,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Professional or Employment Information
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               This term is not defined in the CCPA, but likely includes any
               information relating to a person&apos;s current, past or
               prospective employment or professional experience (e.g., job
@@ -1437,7 +1437,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Protected Classification Characteristics
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Age (40 years or older), race, color, ancestry, national origin,
               citizenship, religion or creed, marital status, medical condition,
               physical or mental disability, sex (including gender, gender
@@ -1450,7 +1450,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-taupe-500">
               Sensory Information
             </h3>
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Audio, electronic, visual, thermal, olfactory, or similar
               information.
             </p>
@@ -1462,7 +1462,7 @@ export default function PrivacyPolicyPage() {
               INFORMATION REMOVAL
             </h2>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Like many companies online, we use services provided by Google,
               Facebook and other companies that use tracking technology. These
               services rely on tracking technologies – such as cookies and web
@@ -1482,7 +1482,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Most browsers let you remove or reject cookies, including cookies
               used for interest-based advertising. To do this, follow the
               instructions in your browser settings. Many browsers accept
@@ -1508,7 +1508,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Your mobile device settings may provide functionality to limit use
               of the advertising ID associated with your mobile device for
               interest-based advertising purposes.
@@ -1522,7 +1522,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               You can block our websites from setting cookies used for
               interest-based ads by using a browser with privacy features, like{" "}
               <a
@@ -1569,7 +1569,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               The following advertising partners offer opt-out features that let
               you opt-out of use of your information for interest-based
               advertising:
@@ -1619,7 +1619,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               You can also use these opt-out options to limit use of your
               information for interest-based advertising by participating
               companies:
@@ -1650,7 +1650,7 @@ export default function PrivacyPolicyPage() {
               </li>
             </ul>
 
-            <p className="mt-4 leading-7">
+            <p className="mt-4 leading-7 text-lg">
               Note that because these opt-out mechanisms are specific to the
               device or browser on which they are exercised, you will need to
               opt-out on every browser and device that you use.

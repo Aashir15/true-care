@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ReferralTracker from "@/components/ReferralTracker";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -11,7 +12,6 @@ const hind = Hind({
   variable: "--font-hind",
   display: "swap",
 });
-
 
 export const metadata = {
   metadataBase: new URL("https://trucareprotection.com"),
@@ -91,6 +91,7 @@ export const metadata = {
   },
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -98,6 +99,7 @@ export default function RootLayout({ children }) {
       className={`${hind.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+          <ReferralTracker />
         <Header />
 
         <main className="flex-1">

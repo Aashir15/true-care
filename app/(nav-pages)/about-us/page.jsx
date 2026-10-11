@@ -37,7 +37,7 @@ export default function AboutUsPage() {
                             </span>
                         </h1>
 
-                        <p className="mb-8 text-base leading-7 text-neutral-600 md:text-lg">
+                        <p className="mb-8 leading-7 text-neutral-600 text-lg">
                             Protect yourself from “True Life” experiences!
                         </p>
                     </div>
@@ -63,13 +63,13 @@ export default function AboutUsPage() {
             <section className="px-6 bg-(--bg-color)">
                 <div className="mx-auto flex max-w-7xl flex-col items-center">
                     <div className="w-full">
-                        <p className="mx-auto mb-8 text-center text-base leading-7 text-neutral-600 md:text-lg">
+                        <p className="mx-auto mb-8 text-center leading-7 text-neutral-600 text-lg">
                             About us – TruCare was created by a team of industry service plan
                             experts designed to cover customers for everyday unexpected failures
                             and mishaps.
                         </p>
 
-                        <p className="mx-auto mb-8 text-center text-base leading-7 text-neutral-600 md:text-lg">
+                        <p className="mx-auto mb-8 text-center leading-7 text-neutral-600 text-lg">
                             Our team provides our partners with more than 80 years of service and
                             warranty experience and prides itself on caring for its customers. No
                             matter how big or small, every TruCare customer will be treated with
@@ -77,7 +77,7 @@ export default function AboutUsPage() {
                             Rated insurance providing compliant and financially supported programs.
                         </p>
 
-                        <p className="mx-auto mb-8 text-center text-base leading-7 text-neutral-600 md:text-lg">
+                        <p className="mx-auto mb-8 text-center leading-7 text-neutral-600 text-lg">
                             TruCare Protection provides value-added features and benefits for
                             retailers and their customers. With “True” coverage benefits for
                             customers and nationwide service available for repairs TruCare also
@@ -85,7 +85,7 @@ export default function AboutUsPage() {
                             the expense of overhead or investment in physical products.
                         </p>
 
-                        <p className="mx-auto mb-8 text-center text-base leading-7 text-neutral-600 md:text-lg">
+                        <p className="mx-auto mb-8 text-center leading-7 text-neutral-600 text-lg">
                             Our goal is to provide unique programs that offer exceptional value to
                             your customers while differentiating you from your customers.
                         </p>
@@ -102,7 +102,7 @@ export default function AboutUsPage() {
                             formula for success!
                         </h2>
 
-                        <p className="mb-8 text-base leading-7 text-neutral-600 md:text-lg">
+                        <p className="mb-8 leading-7 text-neutral-500 text-lg">
                             AppliancesTruCare Protection not only provides our partners with day-one revenue, but we also provide their customers with our core beliefs.
                         </p>
                     </div>
@@ -142,7 +142,7 @@ export default function AboutUsPage() {
                                     {feature.title}
                                 </h3>
 
-                                <p className="max-w-[360px] text-[18px] leading-[1.45] text-black">
+                                <p className="max-w-[360px] text-lg leading-[1.45] text-black">
                                     {feature.description}
                                 </p>
                             </article>
