@@ -202,14 +202,6 @@ export default function Header2() {
         }`}
       >
         <div className="flex h-[82px] items-center justify-end border-b border-[#dddddd] px-5">
-          {/* <Image
-                        src="/assets/TruCareProtection.png"
-                        alt="TruCare Protection"
-                        width={150}
-                        height={60}
-                        className="h-auto w-[150px] object-contain"
-                    /> */}
-
           <button
             type="button"
             onClick={() => setOpen(false)}
@@ -286,15 +278,24 @@ export default function Header2() {
                 <Link
                   href={link.path}
                   onClick={() => setOpen(false)}
-                  className={`block py-4 text-[14px] font-semibold ${
-                    index === 0 ? "text-white" : "text-white"
-                  }`}
+                  className="block py-4 text-[14px] font-semibold text-white"
                 >
                   {link.name}
                 </Link>
               )}
             </div>
           ))}
+
+          {/* Hardcoded link at the end */}
+          <div className="border-b border-[#eeeeee]">
+            <Link
+              href="/start-application"
+              onClick={() => setOpen(false)}
+              className="block py-4 text-[14px] font-semibold text-white uppercase"
+            >
+              Become a Dealer
+            </Link>
+          </div>
         </nav>
       </aside>
     </>

@@ -376,7 +376,7 @@ export default function ContactUsPage() {
           >
             <div className="hidden overflow-hidden border border-[#ddd] md:block">
               <div className="grid grid-cols-[1.1fr_1.6fr_1.4fr_1fr_1.25fr] bg-[#861126] text-md font-semibold uppercase text-white">
-                <TableHeading>Store Name / #</TableHeading>
+                <TableHeading>Store Name</TableHeading>
                 <TableHeading>Street Address</TableHeading>
                 <TableHeading>City, State, Zip</TableHeading>
                 <TableHeading>Store Phone</TableHeading>
