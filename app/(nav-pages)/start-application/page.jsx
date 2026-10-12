@@ -8,7 +8,7 @@ export const metadata = {
   description: "Connect with one of our trusted agents.",
 };
 
-export default function AgentsPage() {
+export default function startApplication() {
   const agentList = Object.entries(agents);
 
   return (
