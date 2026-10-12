@@ -85,7 +85,7 @@ export default function AgentsPage() {
 
                 <div className="mt-5 border-t border-[#f0f0f0] pt-5">
                   <Link
-                    href={`/contact-us?ref=${encodeURIComponent(code)}`}
+                    href={`/pre-onboarding?ref=${encodeURIComponent(code)}`}
                     className="
                       flex w-full
                       items-center justify-center gap-2

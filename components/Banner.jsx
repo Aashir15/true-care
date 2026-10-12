@@ -82,7 +82,7 @@ export default function Banner() {
               duration: AUTO_PLAY_TIME / 1000,
               ease: "linear",
             }}
-            className="absolute -inset-y-0 -left-[8%] w-[116%]"
+            className="absolute -inset-y-0 -left-[8%] w-[100%]"
           >
             <Image
               src={slide.image}
