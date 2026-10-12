@@ -10,8 +10,8 @@ const slides = [
     id: 1,
     title: "Become a",
     highlight: "Dealer Partner!",
-    buttonText: "Contact Us",
-    buttonLink: "/contact-us",
+    buttonText: "Apply Now",
+    buttonLink: "/start-application",
     image: "/assets/slide-1-mob.png",
   },
   {
@@ -96,7 +96,7 @@ export default function HeroSlider() {
                 transition={{ duration: 0.8, delay: 0.35 }}
                 className="mt-7 flex justify-start"
               >
-                <PrimaryBtn href={slide.buttonLink}>{slide.buttonText}</PrimaryBtn>
+                <PrimaryBtn href={slide.buttonLink} className="rounded-md">{slide.buttonText}</PrimaryBtn>
               </motion.div>
             </motion.div>
           </AnimatePresence>

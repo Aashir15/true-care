@@ -4,12 +4,14 @@ import { ArrowRight, Users } from "lucide-react";
 import { agents } from "@/lib/agents";
 
 export const metadata = {
-  title: "Our Agents",
+  title: "Select Your Account Executive",
   description: "Connect with one of our trusted agents.",
 };
 
-export default function startApplication() {
-  const agentList = Object.entries(agents);
+export default function StartApplication() {
+const agentList = Object.entries(agents).sort(([, a], [, b]) =>
+  a.name.localeCompare(b.name),
+);
 
   return (
     <main className="min-h-screen bg-(--bg-color)">
@@ -24,13 +26,8 @@ export default function startApplication() {
             </div>
 
             <h1 className="text-3xl font-semibold leading-tight text-(--primary-color) md:text-[42px]">
-              Our Agents
+             Select Your Account Executive
             </h1>
-
-            <p className="mt-4 text-[16px] leading-7 text-[#5f5f5f] md:text-[18px]">
-              Choose an agent below to get started. You’ll be taken directly
-              to our contact form.
-            </p>
           </header>
 
           <section
@@ -78,7 +75,7 @@ export default function startApplication() {
                     </h2>
 
                     <p className="mt-1 text-sm text-[#8a8a8a]">
-                      Agent {String(index + 1).padStart(2, "0")}
+                     Account Executive
                     </p>
                   </div>
                 </div>
@@ -89,7 +86,7 @@ export default function startApplication() {
                     className="
                       flex w-full
                       items-center justify-center gap-2
-                      rounded-full
+                      rounded-md
                       bg-(--primary-color)
                       px-5 py-3
                       text-[14px] font-semibold
@@ -102,7 +99,7 @@ export default function startApplication() {
                       focus-visible:ring-offset-2
                     "
                   >
-                   Start Your Application - Click Here
+                  Apply Now
 
                     <ArrowRight
                       aria-hidden="true"

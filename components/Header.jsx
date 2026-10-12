@@ -286,12 +286,17 @@ export default function Header2() {
             </div>
           ))}
 
-          {/* Hardcoded link at the end */}
-          <div className="border-b border-[#eeeeee]">
+          <div className="pt-5">
             <Link
               href="/start-application"
               onClick={() => setOpen(false)}
-              className="block py-4 text-[14px] font-semibold text-white uppercase"
+              className="
+        flex w-full items-center justify-center
+        rounded-md
+        bg-white
+        px-6 py-3.5
+        text-[14px] font-semibold uppercase
+      "
             >
               Become a Dealer
             </Link>

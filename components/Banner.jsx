@@ -11,7 +11,8 @@ const slides = [
     title: "Become a",
     highlight: "Dealer Partner!",
     description: "",
-    button: "Contact us",
+    button: "Apply Now",
+    href: "/start-application",
   },
   {
     image: "/assets/slide-2.webp",
@@ -19,6 +20,7 @@ const slides = [
     highlight: "True Life experiences!",
     description: "",
     button: "Learn More",
+    href: "/contact-us",
   },
   {
     image: "/assets/slide-3.webp",
@@ -26,6 +28,7 @@ const slides = [
     highlight: "True Life experiences!",
     description: "",
     button: "Request more Information",
+    href: "/contact-us",
   },
 ];
 
@@ -131,7 +134,7 @@ export default function Banner() {
             </p>
 
             <PrimaryBtn
-              href="/contact-us"
+              href={slide.href}
               showIcon={false}
               className="rounded-md"
             >
