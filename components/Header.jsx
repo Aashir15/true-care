@@ -93,7 +93,7 @@ export default function Header2() {
 
                 {/* Phone */}
                 <PrimaryBtn
-                  href="/contact-us"
+                  href="/start-application"
                   showIcon={false}
                   className="rounded-md"
                 >
