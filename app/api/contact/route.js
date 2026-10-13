@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { getAgentByCode } from "@/lib/agents";
+import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -83,10 +84,42 @@ export async function POST(req) {
 
     const cookieStore = await cookies();
 
-    const referralCode =
-      cookieStore.get("agent_ref")?.value || null;
+    const referralCode = cookieStore.get("agent_ref")?.value || null;
 
     const agent = getAgentByCode(referralCode);
+
+    const supabase = getSupabaseAdmin();
+
+    const { data: submission, error: submissionError } = await supabase
+      .from("contact_submissions")
+      .insert({
+        company_name: companyName,
+        name,
+        phone,
+        email,
+        address,
+        city,
+        zip_code: zipCode,
+        state,
+        interest,
+
+        business_type: Array.isArray(businessType) ? businessType : [],
+
+        message,
+
+        referral_code: referralCode,
+        agent_name: agent?.name || null,
+
+        email_status: "pending",
+      })
+      .select("id")
+      .single();
+
+    if (submissionError) {
+      console.error("Contact Supabase insert error:", submissionError);
+
+      throw new Error("Unable to save contact submission.");
+    }
 
     const selectedBusinessTypes =
       Array.isArray(businessType) && businessType.length
@@ -201,7 +234,27 @@ export async function POST(req) {
 
       console.error("Microsoft Graph send error:", graphError);
 
+      await supabase
+        .from("contact_submissions")
+        .update({
+          email_status: "failed",
+          email_error: graphError.slice(0, 2000),
+        })
+        .eq("id", submission.id);
+
       throw new Error("Unable to send email.");
+    }
+
+    const { error: emailStatusError } = await supabase
+      .from("contact_submissions")
+      .update({
+        email_status: "sent",
+        email_error: null,
+      })
+      .eq("id", submission.id);
+
+    if (emailStatusError) {
+      console.error("Contact email status update error:", emailStatusError);
     }
 
     return Response.json({

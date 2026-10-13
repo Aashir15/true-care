@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 
 import { getAgentByCode } from "@/lib/agents";
+import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -82,6 +83,46 @@ export async function POST(req) {
     const finalReferralCode = referralCode || cookieReferralCode || null;
 
     const agent = getAgentByCode(finalReferralCode);
+
+    const repName = agent?.name || salesRep?.name || "Direct Website Lead";
+
+    const supabase = getSupabaseAdmin();
+
+    const { data: submission, error: submissionError } = await supabase
+      .from("pre_onboarding_submissions")
+      .insert({
+        referral_code: finalReferralCode,
+        agent_name: repName,
+
+        sales_rep: {
+          name: repName,
+          email: salesRep?.email || "",
+          phone: salesRep?.phone || "",
+          dateSubmitted: salesRep?.dateSubmitted || "",
+        },
+
+        client: client || {},
+
+        stores: Array.isArray(stores) ? stores : [],
+
+        protection_plans: Array.isArray(protectionPlans) ? protectionPlans : [],
+
+        other_plan: otherPlan || {},
+
+        onboarding: onboarding || {},
+
+        notes: notes || "",
+
+        email_status: "pending",
+      })
+      .select("id")
+      .single();
+
+    if (submissionError) {
+      console.error("Pre-onboarding Supabase insert error:", submissionError);
+
+      throw new Error("Unable to save pre-onboarding submission.");
+    }
 
     const storeRows = stores
       .filter(
@@ -175,7 +216,7 @@ export async function POST(req) {
       )
       .join("");
 
-    const repName = agent?.name || salesRep?.name || "Direct Website Lead";
+    // const repName = agent?.name || salesRep?.name || "Direct Website Lead";
 
     const accessToken = await getMicrosoftAccessToken();
 
@@ -218,9 +259,7 @@ export async function POST(req) {
 
                   <p>
                     <strong>Rep Email:</strong>
-                    ${escapeHtml(
-                      salesRep?.email || "Signup@trucaredealer.com",
-                    )}
+                    ${escapeHtml(salesRep?.email || "Signup@trucaredealer.com")}
                   </p>
 
                   <p>
@@ -493,7 +532,30 @@ export async function POST(req) {
 
       console.error("Microsoft Graph pre-onboarding send error:", graphError);
 
+      await supabase
+        .from("pre_onboarding_submissions")
+        .update({
+          email_status: "failed",
+          email_error: graphError.slice(0, 2000),
+        })
+        .eq("id", submission.id);
+
       throw new Error("Unable to send pre-onboarding form.");
+    }
+
+    const { error: emailStatusError } = await supabase
+      .from("pre_onboarding_submissions")
+      .update({
+        email_status: "sent",
+        email_error: null,
+      })
+      .eq("id", submission.id);
+
+    if (emailStatusError) {
+      console.error(
+        "Pre-onboarding email status update error:",
+        emailStatusError,
+      );
     }
 
     return Response.json({
