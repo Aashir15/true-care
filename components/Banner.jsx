@@ -11,7 +11,7 @@ const slides = [
     title: "Become a",
     highlight: "Dealer Partner!",
     description: "",
-    button: "Apply Now",
+    button: "Signup Now",
     href: "/start-application",
   },
   {

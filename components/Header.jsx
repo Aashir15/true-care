@@ -36,10 +36,11 @@ const navLinks = [
     name: "CONTACT US",
     path: "/contact-us",
   },
-  // {
-  //     name: "SUBMIT A CLAIM",
-  //     path: "/submit-a-claim",
-  // },
+  {
+    name: "CLIENT LOGIN",
+    path: "https://trucareprotection.live/#/",
+    external: true,
+  },
 ];
 
 export default function Header2() {
@@ -121,6 +122,8 @@ export default function Header2() {
                 >
                   <Link
                     href={link.path}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     className={`whitespace-nowrap px-[29px] text-[14px] font-semibold leading-[21px] transition-colors hover:text-[#ff1f2d] ${
                       index === 0 ? "pl-0 text-[#ff1f2d]" : "text-[#707070]"
                     }`}
@@ -220,10 +223,10 @@ export default function Header2() {
                   <div className="flex items-center">
                     <Link
                       href={link.path}
+                      target={link.external ? "_blank" : undefined}
+                      rel={link.external ? "noopener noreferrer" : undefined}
                       onClick={() => setOpen(false)}
-                      className={`flex-1 py-4 text-[14px] font-semibold ${
-                        index === 0 ? "text-[#ff1f2d]" : "text-white"
-                      }`}
+                      className="block py-4 text-[14px] font-semibold text-white"
                     >
                       {link.name}
                     </Link>

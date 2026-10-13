@@ -10,7 +10,7 @@ const slides = [
     id: 1,
     title: "Become a",
     highlight: "Dealer Partner!",
-    buttonText: "Apply Now",
+    buttonText: "Signup Now",
     buttonLink: "/start-application",
     image: "/assets/slide-1-mob.png",
   },
