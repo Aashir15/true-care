@@ -9,9 +9,9 @@ export const metadata = {
 };
 
 export default function StartApplication() {
-const agentList = Object.entries(agents).sort(([, a], [, b]) =>
-  a.name.localeCompare(b.name),
-);
+  const agentList = Object.entries(agents).sort(([, a], [, b]) =>
+    a.name.localeCompare(b.name),
+  );
 
   return (
     <main className="min-h-screen bg-(--bg-color)">
@@ -26,7 +26,7 @@ const agentList = Object.entries(agents).sort(([, a], [, b]) =>
             </div>
 
             <h1 className="text-3xl font-semibold leading-tight text-(--primary-color) md:text-[42px]">
-             Select Your Account Executive
+              Select Your Account Executive
             </h1>
           </header>
 
@@ -75,7 +75,7 @@ const agentList = Object.entries(agents).sort(([, a], [, b]) =>
                     </h2>
 
                     <p className="mt-1 text-sm text-[#8a8a8a]">
-                     Account Executive
+                      Account Executive
                     </p>
                   </div>
                 </div>
@@ -99,8 +99,7 @@ const agentList = Object.entries(agents).sort(([, a], [, b]) =>
                       focus-visible:ring-offset-2
                     "
                   >
-                  Apply Now
-
+                    Signup now
                     <ArrowRight
                       aria-hidden="true"
                       className="size-4 transition-transform duration-300 group-hover:translate-x-1"

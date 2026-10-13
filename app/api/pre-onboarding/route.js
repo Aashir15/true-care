@@ -77,11 +77,9 @@ export async function POST(req) {
     // Prefer cookie referral if available
     const cookieStore = await cookies();
 
-    const cookieReferralCode =
-      cookieStore.get("agent_ref")?.value || null;
+    const cookieReferralCode = cookieStore.get("agent_ref")?.value || null;
 
-    const finalReferralCode =
-      referralCode || cookieReferralCode || null;
+    const finalReferralCode = referralCode || cookieReferralCode || null;
 
     const agent = getAgentByCode(finalReferralCode);
 
@@ -153,12 +151,7 @@ export async function POST(req) {
       .join("");
 
     const meetingRows = (onboarding?.options || [])
-      .filter(
-        (option) =>
-          option.date ||
-          option.time ||
-          option.notes,
-      )
+      .filter((option) => option.date || option.time || option.notes)
       .map(
         (option) => `
           <tr>
@@ -182,13 +175,9 @@ export async function POST(req) {
       )
       .join("");
 
-    const repName =
-      agent?.name ||
-      salesRep?.name ||
-      "Direct Website Lead";
+    const repName = agent?.name || salesRep?.name || "Direct Website Lead";
 
-    const accessToken =
-      await getMicrosoftAccessToken();
+    const accessToken = await getMicrosoftAccessToken();
 
     const graphResponse = await fetch(
       `https://graph.microsoft.com/v1.0/users/${encodeURIComponent(
@@ -230,24 +219,18 @@ export async function POST(req) {
                   <p>
                     <strong>Rep Email:</strong>
                     ${escapeHtml(
-                      salesRep?.email ||
-                        "info@trucareprotection.com",
+                      salesRep?.email || "info@trucareprotection.com",
                     )}
                   </p>
 
                   <p>
                     <strong>Rep Phone:</strong>
-                    ${escapeHtml(
-                      salesRep?.phone ||
-                        "1-888-699-2878",
-                    )}
+                    ${escapeHtml(salesRep?.phone || "1-888-699-2878")}
                   </p>
 
                   <p>
                     <strong>Date Submitted:</strong>
-                    ${escapeHtml(
-                      salesRep?.dateSubmitted || "",
-                    )}
+                    ${escapeHtml(salesRep?.dateSubmitted || "")}
                   </p>
 
                   <hr />
@@ -282,8 +265,7 @@ export async function POST(req) {
                   <p>
                     <strong>Preferred Contact Method:</strong>
                     ${escapeHtml(
-                      client.preferredContactMethod?.join(", ") ||
-                        "-",
+                      client.preferredContactMethod?.join(", ") || "-",
                     )}
                   </p>
 
@@ -403,23 +385,17 @@ export async function POST(req) {
 
                   <p>
                     <strong>Schedule a Meeting:</strong>
-                    ${escapeHtml(
-                      onboarding?.scheduleMeeting || "-",
-                    )}
+                    ${escapeHtml(onboarding?.scheduleMeeting || "-")}
                   </p>
 
                   <p>
                     <strong>Meeting Format:</strong>
-                    ${escapeHtml(
-                      onboarding?.meetingFormat || "-",
-                    )}
+                    ${escapeHtml(onboarding?.meetingFormat || "-")}
                   </p>
 
                   <p>
                     <strong>Client Time Zone:</strong>
-                    ${escapeHtml(
-                      onboarding?.clientTimeZone || "-",
-                    )}
+                    ${escapeHtml(onboarding?.clientTimeZone || "-")}
                   </p>
 
                   ${
@@ -474,18 +450,14 @@ export async function POST(req) {
                   </h2>
 
                   <p>
-                    ${escapeHtml(
-                      notes || "No additional notes.",
-                    )}
+                    ${escapeHtml(notes || "No additional notes.")}
                   </p>
 
                   <hr />
 
                   <p>
                     <strong>Referral Code:</strong>
-                    ${escapeHtml(
-                      finalReferralCode || "Direct",
-                    )}
+                    ${escapeHtml(finalReferralCode || "Direct")}
                   </p>
                 </div>
               `,
@@ -494,9 +466,7 @@ export async function POST(req) {
             toRecipients: [
               {
                 emailAddress: {
-                  address:
-                    process.env.PRE_ONBOARDING_EMAIL ||
-                    "info@trucareprotection.com",
+                  address: process.env.ADMIN_EMAIL,
                 },
               },
             ],
@@ -519,35 +489,24 @@ export async function POST(req) {
     );
 
     if (!graphResponse.ok) {
-      const graphError =
-        await graphResponse.text();
+      const graphError = await graphResponse.text();
 
-      console.error(
-        "Microsoft Graph pre-onboarding send error:",
-        graphError,
-      );
+      console.error("Microsoft Graph pre-onboarding send error:", graphError);
 
-      throw new Error(
-        "Unable to send pre-onboarding form.",
-      );
+      throw new Error("Unable to send pre-onboarding form.");
     }
 
     return Response.json({
       success: true,
-      message:
-        "Pre-onboarding form submitted successfully.",
+      message: "Pre-onboarding form submitted successfully.",
     });
   } catch (error) {
-    console.error(
-      "Pre-onboarding form error:",
-      error,
-    );
+    console.error("Pre-onboarding form error:", error);
 
     return Response.json(
       {
         success: false,
-        message:
-          "Unable to send pre-onboarding form.",
+        message: "Unable to send pre-onboarding form.",
       },
       {
         status: 500,
