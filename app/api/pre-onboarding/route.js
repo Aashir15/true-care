@@ -219,7 +219,7 @@ export async function POST(req) {
                   <p>
                     <strong>Rep Email:</strong>
                     ${escapeHtml(
-                      salesRep?.email || "info@trucareprotection.com",
+                      salesRep?.email || "Signup@trucaredealer.com",
                     )}
                   </p>
 

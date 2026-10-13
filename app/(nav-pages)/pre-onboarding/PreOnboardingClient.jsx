@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { agents } from "@/lib/agents";
 
-const REP_EMAIL = "info@trucareprotection.com";
+const REP_EMAIL = "Signup@trucaredealer.com";
 const REP_PHONE = "1-888-699-2878";
 
 const plans = [
