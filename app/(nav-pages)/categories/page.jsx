@@ -184,7 +184,7 @@ export default function CategoriesPage() {
     <main className="bg-(--bg-color)">
       {/* Categories */}
       <section className="px-5 py-16 md:px-8 md:pb-24">
-        <div className="mx-auto grid max-w-300 gap-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-300 gap-6">
           {categories.map((category) => (
             <article
               key={category.title}
@@ -200,7 +200,7 @@ export default function CategoriesPage() {
 
               <p className="mt-4 text-lg leading-7">{category.description}</p>
 
-              <ul className="mt-6 space-y-3">
+              <ul className="mt-6 grid gap-x-10 gap-y-3 md:grid-cols-2">
                 {category.features.map((feature) => (
                   <li
                     key={feature}
