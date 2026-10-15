@@ -78,7 +78,7 @@ export default async function AdminLoginPage({
           <button
             type="submit"
             className="
-              mt-6 w-full
+              mt-4 w-full
               rounded-full
               bg-(--primary-color)
               px-6 py-3
