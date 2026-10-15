@@ -264,7 +264,7 @@ export async function POST(req) {
 
                   <p>
                     <strong>Rep Phone:</strong>
-                    ${escapeHtml(salesRep?.phone || "1-888-699-2878")}
+                    ${escapeHtml(salesRep?.phone || "1-877-820-1777")}
                   </p>
 
                   <p>

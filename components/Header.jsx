@@ -29,6 +29,19 @@ const navLinks = [
     ],
   },
   {
+    name: "CATEGORIES",
+    path: "/categories",
+  },
+  {
+    name: "COMPENSATION",
+    path: "/compensation",
+    dropdown: [
+      { name: "Electronics", path: "/compensation#electronics" },
+      { name: "Appliances", path: "/compensation#appliances" },
+      { name: "Furniture", path: "/compensation#furniture" },
+    ],
+  },
+  {
     name: "BENEFITS",
     path: "/benefits",
   },

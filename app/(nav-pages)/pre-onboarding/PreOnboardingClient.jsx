@@ -1,13 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 import { agents } from "@/lib/agents";
 
 const REP_EMAIL = "Signup@trucaredealer.com";
-const REP_PHONE = "1-888-699-2878";
+const REP_PHONE = "1-877-820-1777";
 
 const plans = [
   "Furniture Protection Plan",
@@ -47,6 +46,7 @@ const initialMeetings = [
 ];
 
 export default function preOnboarding() {
+  const router = useRouter();
   const searchParams = useSearchParams();
 
   const referralCode = searchParams.get("ref");
@@ -234,14 +234,11 @@ export default function preOnboarding() {
         throw new Error(data.message || "Unable to send form.");
       }
 
-      setStatus({
-        type: "success",
-        message: "Pre-onboarding form submitted successfully.",
-      });
-
       form.reset();
       setStores(initialStores);
       setMeetings(initialMeetings);
+
+      router.push("/thank-you");
     } catch (error) {
       console.error(error);
 

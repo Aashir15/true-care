@@ -9,9 +9,12 @@ export const metadata = {
 };
 
 export default function StartApplication() {
-  const agentList = Object.entries(agents).sort(([, a], [, b]) =>
-    a.name.localeCompare(b.name),
-  );
+  const agentList = Object.entries(agents).sort(([codeA, a], [codeB, b]) => {
+    if (codeA === "AG-DIRECT00") return -1;
+    if (codeB === "AG-DIRECT00") return 1;
+
+    return a.name.localeCompare(b.name);
+  });
 
   return (
     <main className="min-h-screen bg-(--bg-color)">
@@ -75,7 +78,9 @@ export default function StartApplication() {
                     </h2>
 
                     <p className="mt-1 text-sm text-[#8a8a8a]">
-                      Account Executive
+                      {agent.noExecutive
+                        ? "No Account Executive"
+                        : "Account Executive"}
                     </p>
                   </div>
                 </div>

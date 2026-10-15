@@ -1,9 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 export default function Contact() {
+  const router = useRouter();
+
   const [interest, setInterest] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -54,13 +57,10 @@ export default function Contact() {
         throw new Error(data.message || "Unable to send message.");
       }
 
-      setStatus({
-        type: "success",
-        message: "Message sent successfully.",
-      });
-
       form.reset();
       setInterest("");
+
+      router.push("/thank-you");
     } catch (error) {
       console.error(error);
 
