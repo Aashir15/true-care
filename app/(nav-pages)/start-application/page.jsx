@@ -89,20 +89,20 @@ export default function StartApplication() {
                   <Link
                     href={`/pre-onboarding?ref=${encodeURIComponent(code)}`}
                     className="
-                      flex w-full
-                      items-center justify-center gap-2
-                      rounded-md
-                      bg-(--primary-color)
-                      px-5 py-3
-                      text-[14px] font-semibold
-                      uppercase text-white
-                      transition-all duration-300
-                      hover:bg-[#d91823]
-                      focus-visible:outline-none
-                      focus-visible:ring-2
-                      focus-visible:ring-(--primary-color)
-                      focus-visible:ring-offset-2
-                    "
+      flex w-full
+      items-center justify-center gap-2
+      rounded-md
+      bg-(--primary-color)
+      px-5 py-3
+      text-[14px] font-semibold
+      uppercase text-white
+      transition-all duration-300
+      hover:bg-[#d91823]
+      focus-visible:outline-none
+      focus-visible:ring-2
+      focus-visible:ring-(--primary-color)
+      focus-visible:ring-offset-2
+    "
                   >
                     Signup now
                     <ArrowRight
