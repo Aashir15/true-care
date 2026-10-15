@@ -35,7 +35,7 @@ export default async function AdminLoginPage({
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-[#f7f5f2] px-5">
-      <div className="w-full max-w-[420px] rounded-[20px] bg-white p-7 shadow-[0_12px_45px_rgba(0,0,0,0.08)] md:p-9">
+      <div className="w-full max-w-110 rounded-[20px] bg-white p-7 shadow-[0_12px_45px_rgba(0,0,0,0.08)] md:p-9">
         <h1 className="text-center text-2xl font-semibold text-(--primary-color)">
           Admin Login
         </h1>
@@ -79,7 +79,7 @@ export default async function AdminLoginPage({
             type="submit"
             className="
               mt-4 w-full
-              rounded-full
+              rounded-md
               bg-(--primary-color)
               px-6 py-3
               text-sm font-semibold
