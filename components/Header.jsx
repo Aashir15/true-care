@@ -88,15 +88,18 @@ export default function Header2() {
               <div className="flex items-center pt-[10px]">
                 {/* Address */}
                 <div className="flex items-center gap-[16px] pr-[20px]">
-                  <MapPin
+                  <Phone
                     size={15}
                     strokeWidth={3}
                     className="shrink-0 text-[#ff1f2d]"
                   />
 
-                  <span className="text-[16px] font-normal tracking-[0.1px] text-[#777777]">
-                    1692 Coastal Highway, Lewes, Delaware, 19958
-                  </span>
+                  <a
+                    href="tel:18778201777"
+                    className="text-xl font-semibold tracking-[0.1px] text-[#ff1f2d]"
+                  >
+                    1-877-820-1777
+                  </a>
                 </div>
 
                 {/* Divider */}
@@ -316,6 +319,16 @@ export default function Header2() {
             >
               Become a Dealer
             </Link>
+          </div>
+          <div className="flex items-center gap-[16px] pr-[20px] mt-6">
+            <Phone size={15} strokeWidth={3} className="shrink-0 text-white" />
+
+            <a
+              href="tel:18778201777"
+              className="text-xl font-semibold tracking-[0.1px] text-white"
+            >
+              1-877-820-1777
+            </a>
           </div>
         </nav>
       </aside>

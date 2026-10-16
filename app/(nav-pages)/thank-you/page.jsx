@@ -9,7 +9,7 @@ export default function ThankYouPage() {
     <main className="flex min-h-[70vh] items-center justify-center bg-[#f7f5f2] px-5 py-16">
       <div className="mx-auto max-w-[720px] text-center">
         <h1 className="text-3xl font-semibold text-(--primary-color) md:text-[42px]">
-          Thank You
+          Message Sent
         </h1>
 
         <div className="mt-6 space-y-5 text-[16px] leading-7 text-[#555] md:text-[18px]">
@@ -18,7 +18,7 @@ export default function ThankYouPage() {
           </p>
 
           <p>
-            Thank you for contacting Trucare protection. We’ve received your
+            Thank you for contacting TruCare protection. We’ve received your
             message and appreciate you reaching out.
           </p>
 
@@ -28,7 +28,7 @@ export default function ThankYouPage() {
           </p>
 
           <p className="font-semibold text-[#222]">
-            Truecare Support Team
+            TrueCare Support Team
           </p>
         </div>
 

@@ -14,7 +14,7 @@ const hind = Hind({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://trucareprotection.com"),
+  metadataBase: new URL("https://trucaredealer.com"),
 
   title: {
     default: "TruCare Protection | Protection Plans & Service Solutions",
@@ -52,7 +52,7 @@ export const metadata = {
     title: "TruCare Protection | Protection Plans & Service Solutions",
     description:
       "Protection plans and service solutions designed to give customers confidence when the unexpected happens.",
-    url: "https://trucareprotection.com",
+    url: "https://trucaredealer.com",
     siteName: "TruCare Protection",
     locale: "en_US",
     type: "website",

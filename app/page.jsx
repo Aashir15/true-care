@@ -96,7 +96,7 @@ export default function Page() {
           <p className="mt-5 text-2xl font-semibold leading-7 text-[#393D45]">
             TruCare Protection was created by a team of protection plan &
             service industry experts! Protection Plans for Appliances,
-            Electronics & Furnitures
+            Electronics & Furnitures.
           </p>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function Page() {
 
           <div>
             <h2 className="heading mb-5 max-w-xl">
-              Trucare Offers Day-One Protection On:
+              TruCare Offers Day-One Protection On:
             </h2>
 
             <ul className="list-disc space-y-2 pl-5">

@@ -20,7 +20,7 @@ export default function CompensationTable({ title, subtitle, sections }) {
               key={section.title}
               className="overflow-hidden border border-black bg-white"
             >
-              <div className="bg-[#d9d9d9] px-3 py-2 text-center text-sm font-bold text-black">
+              <div className="bg-[#d9d9d9] px-3 py-2 text-center text-2xl font-bold text-black">
                 {section.title}
               </div>
 
@@ -42,12 +42,12 @@ export default function CompensationTable({ title, subtitle, sections }) {
                         Max. Coverage
                       </th>
 
-                      <th className="border border-[#555] px-2 py-2">
+                      {/* <th className="border border-[#555] px-2 py-2">
                         TC - Master Cost
-                      </th>
+                      </th> */}
 
                       <th className="border border-[#555] px-2 py-2">
-                        TC - Dealer Cost
+                        TruCare Dealer Cost
                       </th>
 
                       <th className="border border-[#555] px-2 py-2">
@@ -75,9 +75,9 @@ export default function CompensationTable({ title, subtitle, sections }) {
                           {row.max}
                         </td>
 
-                        <td className="border border-[#777] bg-[#fff200] px-2 py-1.5 text-center font-semibold">
+                        {/* <td className="border border-[#777] bg-[#fff200] px-2 py-1.5 text-center font-semibold">
                           {row.master}
-                        </td>
+                        </td> */}
 
                         <td className="border border-[#777] bg-[#b7e4c7] px-2 py-1.5 text-center font-semibold">
                           {row.dealer}

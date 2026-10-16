@@ -18,15 +18,31 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* Location */}
-        <div className="flex justify-center md:justify-end">
+        {/* Contact Info */}
+        <div className="flex flex-col items-center gap-4 md:items-end">
+          {/* Phone */}
+          <div className="flex items-center gap-2">
+            <i
+              className="ri-phone-fill shrink-0 text-[18px]"
+              aria-hidden="true"
+            />
+
+            <a
+              href="tel:18778201777"
+              className="text-lg leading-6 transition-colors hover:text-(--primary-color) md:leading-7"
+            >
+              1-877-820-1777
+            </a>
+          </div>
+
+          {/* Address */}
           <div className="flex items-start gap-2">
             <i
               className="ri-map-pin-fill mt-1 shrink-0 text-[18px]"
               aria-hidden="true"
             />
 
-            <p className="max-w-[280px] leading-6 text-lg md:max-w-none md:whitespace-nowrap md:leading-7">
+            <p className="max-w-[280px] text-lg leading-6 md:max-w-none md:whitespace-nowrap md:leading-7">
               1692 Coastal Highway, Lewes, Delaware, 19958
             </p>
           </div>

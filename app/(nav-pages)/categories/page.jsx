@@ -19,7 +19,7 @@ const categories = [
       "Carry-in, depot or in-home repair",
     ],
     products: [
-      "Audio compon",
+      "Audio Components",
       "Audio system",
       "Camcorder",
       "Camera",
