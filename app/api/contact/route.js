@@ -155,7 +155,7 @@ export async function POST(req) {
                     color: #222;
                   "
                 >
-                  <h2>True Care</h2>
+                  <h2>TruCare onboarding lead (RISS HOLDINGS)</h2>
 
                   <h3>Client Details</h3>
 
@@ -210,6 +210,16 @@ export async function POST(req) {
               {
                 emailAddress: {
                   address: process.env.ADMIN_EMAIL,
+                },
+              },
+              {
+                emailAddress: {
+                  address: process.env.SECONDARY_ADMIN_EMAIL,
+                },
+              },
+              {
+                emailAddress: {
+                  address: process.env.EMAIL_USER,
                 },
               },
             ],

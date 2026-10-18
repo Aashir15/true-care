@@ -247,7 +247,7 @@ export async function POST(req) {
                   "
                 >
                   <h1 style="color:#861126;">
-                    TruCare Pre-Onboarding Lead Form
+                   TruCare onboarding lead (RISS HOLDINGS)
                   </h1>
 
                   <h2>1. Sales Rep</h2>
@@ -506,6 +506,16 @@ export async function POST(req) {
               {
                 emailAddress: {
                   address: process.env.ADMIN_EMAIL,
+                },
+              },
+              {
+                emailAddress: {
+                  address: process.env.SECONDARY_ADMIN_EMAIL,
+                },
+              },
+              {
+                emailAddress: {
+                  address: process.env.EMAIL_USER,
                 },
               },
             ],

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CompensationTable({ title, subtitle, sections }) {
   return (
     <main className=" px-4 py-8 md:px-6 md:py-12">
@@ -11,7 +13,15 @@ export default function CompensationTable({ title, subtitle, sections }) {
             {title}
           </h1>
 
-          <p className="mt-2 text-md font-medium text-[#444]">{subtitle}</p>
+          <p className="mt-2 text-md font-medium text-[#444]">
+            {subtitle}{" "}
+            <Link
+              href="/categories"
+              className="font-semibold text-(--primary-color) underline underline-offset-2"
+            >
+              and More.
+            </Link>
+          </p>
         </div>
 
         <div className="space-y-7">
