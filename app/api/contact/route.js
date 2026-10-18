@@ -155,7 +155,7 @@ export async function POST(req) {
                     color: #222;
                   "
                 >
-                  <h2>TruCare onboarding lead (RISS HOLDINGS)</h2>
+                  <h2>Trucare Contact us</h2>
 
                   <h3>Client Details</h3>
 

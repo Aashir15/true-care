@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export default function CompensationTable({ title, subtitle, sections }) {
+export default function CompensationTable({
+  title,
+  subtitle,
+  categoryLink,
+  sections,
+}) {
   return (
     <main className=" px-4 py-8 md:px-6 md:py-12">
       <div className="mx-auto max-w-300">
@@ -16,7 +21,7 @@ export default function CompensationTable({ title, subtitle, sections }) {
           <p className="mt-2 text-md font-medium text-[#444]">
             {subtitle}{" "}
             <Link
-              href="/categories"
+              href={categoryLink}
               className="font-semibold text-(--primary-color) underline underline-offset-2"
             >
               and More.

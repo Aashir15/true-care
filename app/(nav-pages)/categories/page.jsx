@@ -187,8 +187,9 @@ export default function CategoriesPage() {
         <div className="mx-auto grid max-w-300 gap-6">
           {categories.map((category) => (
             <article
+              id={category.title.toLowerCase()}
               key={category.title}
-              className="flex flex-col rounded-[18px] border border-[#e4dfdc] bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.04)] md:p-8"
+              className="scroll-mt-30 flex flex-col rounded-[18px] border border-[#e4dfdc] bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.04)] md:p-8"
             >
               <p className="text-sm font-semibold uppercase tracking-[0.14em] text-(--primary-color)">
                 {category.eyebrow}
