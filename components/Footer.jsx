@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-[#f7f7f7] text-[#777]">
-      <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-8 px-5 py-12 md:grid-cols-2 md:px-8 lg:px-7">
+      <div className="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-10 px-5 py-12 md:flex-row md:px-8 lg:px-7">
         {/* Logo */}
         <div className="flex justify-center md:justify-start">
           <Link href="/" aria-label="TruCare Protection home">
@@ -19,19 +19,38 @@ export default function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div className="flex flex-col items-center gap-4 md:items-end">
+       <div className="flex flex-col items-start gap-4">
+          <h3 className="text-2xl font-semibold text-(--primary-color)">
+            Connect
+          </h3>
+
           {/* Phone */}
           <div className="flex items-center gap-2">
             <i
-              className="ri-phone-fill shrink-0 text-[18px]"
+              className="ri-phone-fill shrink-0 text-xl text-(--primary-color)"
               aria-hidden="true"
             />
 
             <a
               href="tel:18778201777"
-              className="text-lg leading-6 transition-colors hover:text-(--primary-color) md:leading-7"
+              className="text-3xl leading-6 transition-colors text-(--primary-color) md:leading-7"
             >
               1-877-820-1777
+            </a>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-center gap-2">
+            <i
+              className="ri-mail-fill shrink-0 text-[18px]"
+              aria-hidden="true"
+            />
+
+            <a
+              href="mailto:Signup@trucaredealer.com"
+              className="text-lg leading-6 transition-colors hover:text-(--primary-color) md:leading-7"
+            >
+              Signup@trucaredealer.com
             </a>
           </div>
 

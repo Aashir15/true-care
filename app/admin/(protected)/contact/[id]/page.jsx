@@ -96,7 +96,7 @@ export default async function ContactSubmissionPage({
               }
             />
 
-            <Detail
+            {/* <Detail
               label="Agent"
               value={
                 data.agent_name || "Direct"
@@ -108,7 +108,7 @@ export default async function ContactSubmissionPage({
               value={
                 data.referral_code || "-"
               }
-            />
+            /> */}
 
             <Detail
               label="Email Status"

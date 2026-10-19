@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ReferralTracker from "@/components/ReferralTracker";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -91,22 +92,17 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${hind.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${hind.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
-          <ReferralTracker />
+        <ReferralTracker />
         <Header />
 
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
 
         <Footer />
+        <LanguageSwitcher />
       </body>
     </html>
   );

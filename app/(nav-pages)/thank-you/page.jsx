@@ -28,7 +28,7 @@ export default function ThankYouPage() {
           </p>
 
           <p className="font-semibold text-[#222]">
-            TrueCare Support Team
+            TruCare Support Team
           </p>
         </div>
 

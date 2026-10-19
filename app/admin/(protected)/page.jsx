@@ -64,7 +64,7 @@ export default async function AdminDashboard({ searchParams }) {
   const contacts =
     formFilter === "pre-onboarding"
       ? []
-      : allContacts.filter((item) => matchesAgent(item) && matchesStatus(item));
+      : allContacts.filter((item) => matchesStatus(item));
 
   const preOnboarding =
     formFilter === "contact"
@@ -133,31 +133,33 @@ export default async function AdminDashboard({ searchParams }) {
             </div>
 
             {/* Agent */}
-            <div>
-              <label
-                htmlFor="agent"
-                className="mb-2 block text-xs font-semibold uppercase tracking-wide text-[#777]"
-              >
-                Agent
-              </label>
+            {formFilter !== "contact" && (
+              <div>
+                <label
+                  htmlFor="agent"
+                  className="mb-2 block text-xs font-semibold uppercase tracking-wide text-[#777]"
+                >
+                  Agent
+                </label>
 
-              <select
-                id="agent"
-                name="agent"
-                defaultValue={agentFilter}
-                className="h-[44px] w-full rounded-[10px] border border-[#ddd] bg-white px-3 text-sm outline-none focus:border-(--primary-color)"
-              >
-                <option value="all">All Agents</option>
+                <select
+                  id="agent"
+                  name="agent"
+                  defaultValue={agentFilter}
+                  className="h-[44px] w-full rounded-[10px] border border-[#ddd] bg-white px-3 text-sm outline-none focus:border-(--primary-color)"
+                >
+                  <option value="all">All Agents</option>
 
-                <option value="direct">Direct Website Lead</option>
+                  <option value="direct">Direct Website Lead</option>
 
-                {agentOptions.map((agent) => (
-                  <option key={agent} value={agent}>
-                    {agent}
-                  </option>
-                ))}
-              </select>
-            </div>
+                  {agentOptions.map((agent) => (
+                    <option key={agent} value={agent}>
+                      {agent}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
 
             {/* Status */}
             <div>
@@ -253,7 +255,7 @@ export default async function AdminDashboard({ searchParams }) {
                         <TableHeader>Company</TableHeader>
                         <TableHeader>Name</TableHeader>
                         <TableHeader>Email</TableHeader>
-                        <TableHeader>Agent</TableHeader>
+                        {/* <TableHeader>Agent</TableHeader> */}
                         <TableHeader>Status</TableHeader>
                         <TableHeader>Date</TableHeader>
                         <TableHeader />
@@ -269,7 +271,7 @@ export default async function AdminDashboard({ searchParams }) {
 
                           <TableCell>{item.email}</TableCell>
 
-                          <TableCell>{item.agent_name || "Direct"}</TableCell>
+                          {/* <TableCell>{item.agent_name || "Direct"}</TableCell> */}
 
                           <TableCell>
                             <Status status={item.email_status} />

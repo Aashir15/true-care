@@ -27,7 +27,7 @@ export const plans = {
         ],
 
         bottomNote:
-            "Enjoy Peace of Mind protection with our various term plans.TruCare Appliance Protection offers terms from1yr, 2yr, 3yr, and five years of coverage, all starting on the date of purchase or delivery.",
+            "Enjoy Peace of Mind protection with our various term plans. TruCare Appliance Protection offers terms from 1yr, 2yr, 3yr, and five years of coverage, all starting on the date of purchase or delivery.",
     },
 
     electronics: {
@@ -61,14 +61,12 @@ export const plans = {
                     "Accidental Damage",
                     "Replacement Plans",
                     "No deductibles or hidden costs",
-                    "Power Surge",
-                    "Power Surge",
                 ],
             },
         ],
 
         bottomNote:
-            "Enjoy Peace of Mind protection with our various term plans.TruCare Appliance Protection offers terms from1yr, 2yr, 3yr, and five years of coverage, all starting on the date of purchase or delivery.",
+            "Enjoy Peace of Mind protection with our various term plans. TruCare Appliance Protection offers terms from 1yr, 2yr, 3yr, and five years of coverage, all starting on the date of purchase or delivery.",
     },
 
     furniture: {
@@ -106,6 +104,6 @@ export const plans = {
         ],
 
         bottomNote:
-            "Enjoy Peace of Mind protection with our various term plans.TruCare Appliance Protection offers terms from1yr, 2yr, 3yr, and five years of coverage, all starting on the date of purchase or delivery.",
+            "Enjoy Peace of Mind protection with our various term plans. TruCare Appliance Protection offers terms from 1yr, 2yr, 3yr, and five years of coverage, all starting on the date of purchase or delivery.",
     },
 };
