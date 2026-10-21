@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Languages, X } from "lucide-react";
+import { Globe2, Languages, MessageSquareText, X } from "lucide-react";
 
 export default function LanguageSwitcher() {
   const [open, setOpen] = useState(false);
@@ -148,7 +148,9 @@ export default function LanguageSwitcher() {
             hover:scale-105
           "
         >
-          {open ? <X className="size-5" /> : <Languages className="size-5" />}
+          {/* {open ? <X className="size-5" /> : <Languages className="size-5" />} */}
+          {open ? <X className="size-5" /> : <Globe2 className="size-5" />}
+          {/* {open ? <X className="size-5" /> : <MessageSquareText className="size-5" />} */}
         </button>
       </div>
     </>

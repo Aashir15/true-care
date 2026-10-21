@@ -64,7 +64,7 @@ export default function Header2() {
     <>
       <header className="relative z-50 w-full bg-white">
         {/* Desktop Header */}
-        <div className="hidden lg:block">
+        <div className="hidden min-[1280px]:block">
           {/* Main content */}
           <div className="px-[39px] pt-[35px] max-w-300 mx-auto">
             <div className="flex items-start justify-between">
@@ -130,7 +130,7 @@ export default function Header2() {
             aria-label="Main navigation"
             className="h-[43px] border-y border-[#dddddd] "
           >
-            <div className="flex h-full items-center pl-[58px] max-w-300 mx-auto">
+           <div className="mx-auto flex h-full max-w-300 items-center justify-center">
               {navLinks.map((link, index) => (
                 <div
                   key={link.name}
@@ -140,7 +140,7 @@ export default function Header2() {
                     href={link.path}
                     target={link.external ? "_blank" : undefined}
                     rel={link.external ? "noopener noreferrer" : undefined}
-                    className={`whitespace-nowrap px-[29px] text-[14px] font-semibold leading-[21px] transition-colors hover:text-[#ff1f2d] ${
+                    className={`whitespace-nowrap px-4 text-[14px] font-semibold leading-[21px] transition-colors hover:text-[#ff1f2d] ${
                       index === 0 ? "pl-0 text-[#ff1f2d]" : "text-[#707070]"
                     }`}
                   >
@@ -179,7 +179,7 @@ export default function Header2() {
         </div>
 
         {/* Mobile Header */}
-        <div className="flex h-[82px] items-center justify-between border-b border-[#dddddd] px-5 lg:hidden">
+        <div className="flex h-[82px] items-center justify-between border-b border-[#dddddd] px-5 min-[1280px]:hidden">
           <Link href="/" aria-label="TruCare Protection home">
             <Image
               src="/assets/TruCareProtection.png"
@@ -209,14 +209,14 @@ export default function Header2() {
           type="button"
           aria-label="Close navigation menu"
           onClick={() => setOpen(false)}
-          className="fixed inset-0 z-50 bg-black/40 lg:hidden"
+          className="fixed inset-0 z-50 bg-black/40 min-[1280px]:hidden"
         />
       )}
 
       {/* Mobile Sidebar */}
       <aside
         aria-label="Mobile navigation"
-        className={`fixed right-0 top-0 z-60 h-dvh w-[85%] max-w-[320px] bg-(--primary-color) shadow-xl transition-transform duration-300 lg:hidden ${
+        className={`fixed right-0 top-0 z-60 h-dvh w-[85%] max-w-[320px] bg-(--primary-color) shadow-xl transition-transform duration-300 min-[1280px]:hidden ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
