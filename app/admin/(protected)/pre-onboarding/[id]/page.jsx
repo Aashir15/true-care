@@ -5,9 +5,7 @@ import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
 export const dynamic = "force-dynamic";
 
-export default async function PreOnboardingDetails({
-  params,
-}) {
+export default async function PreOnboardingDetails({ params }) {
   const { id } = await params;
 
   const supabase = getSupabaseAdmin();
@@ -36,154 +34,86 @@ export default async function PreOnboardingDetails({
           href="/admin"
           className="text-sm font-semibold text-(--primary-color)"
         >
-          ← Back to Dashboard
+          Back to Dashboard
         </Link>
 
         <div className="mt-5 space-y-6">
           <AdminSection title="Sales Rep">
             <DetailsGrid>
-              <Detail
-                label="Rep Name"
-                value={salesRep.name}
-              />
+              <Detail label="Rep Name" value={salesRep.name} />
 
-              <Detail
-                label="Rep Email"
-                value={salesRep.email}
-              />
+              <Detail label="Rep Email" value={salesRep.email} />
 
-              <Detail
-                label="Rep Phone"
-                value={salesRep.phone}
-              />
+              <Detail label="Rep Phone" value={salesRep.phone} />
 
-              <Detail
-                label="Date Submitted"
-                value={
-                  salesRep.dateSubmitted
-                }
-              />
+              <Detail label="Date Submitted" value={salesRep.dateSubmitted} />
 
               <Detail
                 label="Referral Code"
-                value={
-                  data.referral_code ||
-                  "Direct"
-                }
+                value={data.referral_code || "Direct"}
               />
             </DetailsGrid>
           </AdminSection>
 
           <AdminSection title="Client Contact">
             <DetailsGrid>
-              <Detail
-                label="Business Name"
-                value={
-                  client.businessName
-                }
-              />
+              <Detail label="Business Name" value={client.businessName} />
 
-              <Detail
-                label="Contact Name"
-                value={
-                  client.contactName
-                }
-              />
+              <Detail label="Contact Name" value={client.contactName} />
 
-              <Detail
-                label="Title"
-                value={client.title}
-              />
+              <Detail label="Title" value={client.title} />
 
-              <Detail
-                label="Email"
-                value={client.email}
-              />
+              <Detail label="Email" value={client.email} />
 
-              <Detail
-                label="Phone"
-                value={client.phone}
-              />
+              <Detail label="Phone" value={client.phone} />
 
               <Detail
                 label="Preferred Contact"
-                value={
-                  client.preferredContactMethod?.join(
-                    ", ",
-                  ) || "-"
-                }
+                value={client.preferredContactMethod?.join(", ") || "-"}
               />
 
-              <Detail
-                label="Best Days / Times"
-                value={
-                  client.bestDaysTimes
-                }
-              />
+              <Detail label="Best Days / Times" value={client.bestDaysTimes} />
 
-              <Detail
-                label="Website"
-                value={client.website}
-              />
+              <Detail label="Website" value={client.website} />
             </DetailsGrid>
           </AdminSection>
 
           <AdminSection title="Store Locations">
             {stores.length === 0 ? (
-              <p className="text-sm text-[#777]">
-                No stores provided.
-              </p>
+              <p className="text-sm text-[#777]">No stores provided.</p>
             ) : (
               <div className="space-y-4">
-                {stores.map(
-                  (store, index) => (
-                    <div
-                      key={index}
-                      className="rounded-[12px] border border-[#eee] p-4"
-                    >
-                      <p className="mb-4 font-semibold text-(--primary-color)">
-                        Location {index + 1}
-                      </p>
+                {stores.map((store, index) => (
+                  <div
+                    key={index}
+                    className="rounded-[12px] border border-[#eee] p-4"
+                  >
+                    <p className="mb-4 font-semibold text-(--primary-color)">
+                      Location {index + 1}
+                    </p>
 
-                      <DetailsGrid>
-                        <Detail
-                          label="Store Name"
-                          value={
-                            store.storeName
-                          }
-                        />
+                    <DetailsGrid>
+                      <Detail label="Store Name" value={store.storeName} />
 
-                        <Detail
-                          label="Street Address"
-                          value={
-                            store.streetAddress
-                          }
-                        />
+                      <Detail
+                        label="Street Address"
+                        value={store.streetAddress}
+                      />
 
-                        <Detail
-                          label="City, State, Zip"
-                          value={
-                            store.cityStateZip
-                          }
-                        />
+                      <Detail
+                        label="City, State, Zip"
+                        value={store.cityStateZip}
+                      />
 
-                        <Detail
-                          label="Store Phone"
-                          value={
-                            store.storePhone
-                          }
-                        />
+                      <Detail label="Store Phone" value={store.storePhone} />
 
-                        <Detail
-                          label="Store Manager"
-                          value={
-                            store.storeManager
-                          }
-                        />
-                      </DetailsGrid>
-                    </div>
-                  ),
-                )}
+                      <Detail
+                        label="Store Manager"
+                        value={store.storeManager}
+                      />
+                    </DetailsGrid>
+                  </div>
+                ))}
               </div>
             )}
           </AdminSection>
@@ -195,49 +125,29 @@ export default async function PreOnboardingDetails({
                   key={plan.plan}
                   className="rounded-[12px] border border-[#eee] p-4"
                 >
-                  <strong>
-                    {plan.plan}
-                  </strong>
+                  <strong>{plan.plan}</strong>
 
                   <p className="mt-2 text-sm">
-                    Interested:{" "}
-                    {plan.interested
-                      ? "Yes"
-                      : "No"}
+                    Interested: {plan.interested ? "Yes" : "No"}
                   </p>
 
                   <p className="mt-1 text-sm">
-                    Terms:{" "}
-                    {plan.terms?.length
-                      ? plan.terms.join(
-                          ", ",
-                        )
-                      : "-"}
+                    Terms: {plan.terms?.length ? plan.terms.join(", ") : "-"}
                   </p>
                 </div>
               ))}
 
               {otherPlan?.name && (
                 <div className="rounded-[12px] border border-[#eee] p-4">
-                  <strong>
-                    Other: {otherPlan.name}
-                  </strong>
+                  <strong>Other: {otherPlan.name}</strong>
 
                   <p className="mt-2 text-sm">
-                    Interested:{" "}
-                    {otherPlan.interested
-                      ? "Yes"
-                      : "No"}
+                    Interested: {otherPlan.interested ? "Yes" : "No"}
                   </p>
 
                   <p className="mt-1 text-sm">
                     Terms:{" "}
-                    {otherPlan.terms
-                      ?.length
-                      ? otherPlan.terms.join(
-                          ", ",
-                        )
-                      : "-"}
+                    {otherPlan.terms?.length ? otherPlan.terms.join(", ") : "-"}
                   </p>
                 </div>
               )}
@@ -248,69 +158,40 @@ export default async function PreOnboardingDetails({
             <DetailsGrid>
               <Detail
                 label="Schedule Meeting"
-                value={
-                  onboarding.scheduleMeeting
-                }
+                value={onboarding.scheduleMeeting}
               />
 
-              <Detail
-                label="Meeting Format"
-                value={
-                  onboarding.meetingFormat
-                }
-              />
+              <Detail label="Meeting Format" value={onboarding.meetingFormat} />
 
               <Detail
                 label="Client Time Zone"
-                value={
-                  onboarding.clientTimeZone
-                }
+                value={onboarding.clientTimeZone}
               />
             </DetailsGrid>
 
             <div className="mt-5 space-y-3">
-              {onboarding.options?.map(
-                (option, index) => (
-                  <div
-                    key={index}
-                    className="rounded-[12px] border border-[#eee] p-4"
-                  >
-                    <strong>
-                      {option.label}
-                    </strong>
+              {onboarding.options?.map((option, index) => (
+                <div
+                  key={index}
+                  className="rounded-[12px] border border-[#eee] p-4"
+                >
+                  <strong>{option.label}</strong>
 
-                    <DetailsGrid>
-                      <Detail
-                        label="Date"
-                        value={
-                          option.date
-                        }
-                      />
+                  <DetailsGrid>
+                    <Detail label="Date" value={option.date} />
 
-                      <Detail
-                        label="Time"
-                        value={
-                          option.time
-                        }
-                      />
+                    <Detail label="Time" value={option.time} />
 
-                      <Detail
-                        label="Notes"
-                        value={
-                          option.notes
-                        }
-                      />
-                    </DetailsGrid>
-                  </div>
-                ),
-              )}
+                    <Detail label="Notes" value={option.notes} />
+                  </DetailsGrid>
+                </div>
+              ))}
             </div>
           </AdminSection>
 
           <AdminSection title="Notes for TruCare Team">
             <p className="whitespace-pre-wrap text-[15px] text-[#333]">
-              {data.notes ||
-                "No additional notes."}
+              {data.notes || "No additional notes."}
             </p>
           </AdminSection>
         </div>
@@ -319,10 +200,7 @@ export default async function PreOnboardingDetails({
   );
 }
 
-function AdminSection({
-  title,
-  children,
-}) {
+function AdminSection({ title, children }) {
   return (
     <section className="rounded-[18px] bg-white p-6 shadow-sm md:p-8">
       <h2 className="mb-6 text-xl font-semibold text-(--primary-color)">
@@ -335,11 +213,7 @@ function AdminSection({
 }
 
 function DetailsGrid({ children }) {
-  return (
-    <div className="grid gap-5 sm:grid-cols-2">
-      {children}
-    </div>
-  );
+  return <div className="grid gap-5 sm:grid-cols-2">{children}</div>;
 }
 
 function Detail({ label, value }) {
@@ -349,9 +223,7 @@ function Detail({ label, value }) {
         {label}
       </p>
 
-      <p className="mt-1 break-words text-[15px] text-[#222]">
-        {value || "-"}
-      </p>
+      <p className="mt-1 break-words text-[15px] text-[#222]">{value || "-"}</p>
     </div>
   );
 }

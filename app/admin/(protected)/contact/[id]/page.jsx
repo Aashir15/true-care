@@ -5,9 +5,7 @@ import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
 export const dynamic = "force-dynamic";
 
-export default async function ContactSubmissionPage({
-  params,
-}) {
+export default async function ContactSubmissionPage({ params }) {
   const { id } = await params;
 
   const supabase = getSupabaseAdmin();
@@ -29,7 +27,7 @@ export default async function ContactSubmissionPage({
           href="/admin"
           className="text-sm font-semibold text-(--primary-color)"
         >
-          ← Back to Dashboard
+          Back to Dashboard
         </Link>
 
         <div className="mt-5 rounded-[18px] bg-white p-6 shadow-sm md:p-8">
@@ -38,60 +36,29 @@ export default async function ContactSubmissionPage({
           </h1>
 
           <div className="mt-7 grid gap-5 sm:grid-cols-2">
-            <Detail
-              label="Company"
-              value={data.company_name}
-            />
+            <Detail label="Company" value={data.company_name} />
 
-            <Detail
-              label="Name"
-              value={data.name}
-            />
+            <Detail label="Name" value={data.name} />
 
-            <Detail
-              label="Phone"
-              value={data.phone}
-            />
+            <Detail label="Phone" value={data.phone} />
 
-            <Detail
-              label="Email"
-              value={data.email}
-            />
+            <Detail label="Email" value={data.email} />
 
-            <Detail
-              label="Address"
-              value={data.address}
-            />
+            <Detail label="Address" value={data.address} />
 
-            <Detail
-              label="City"
-              value={data.city}
-            />
+            <Detail label="City" value={data.city} />
 
-            <Detail
-              label="Zip Code"
-              value={data.zip_code}
-            />
+            <Detail label="Zip Code" value={data.zip_code} />
 
-            <Detail
-              label="State"
-              value={data.state}
-            />
+            <Detail label="State" value={data.state} />
 
-            <Detail
-              label="Interested In"
-              value={data.interest}
-            />
+            <Detail label="Interested In" value={data.interest} />
 
             <Detail
               label="Business Type"
               value={
-                Array.isArray(
-                  data.business_type,
-                )
-                  ? data.business_type.join(
-                      ", ",
-                    )
+                Array.isArray(data.business_type)
+                  ? data.business_type.join(", ")
                   : "-"
               }
             />
@@ -110,17 +77,11 @@ export default async function ContactSubmissionPage({
               }
             /> */}
 
-            <Detail
-              label="Email Status"
-              value={data.email_status}
-            />
+            <Detail label="Email Status" value={data.email_status} />
           </div>
 
           <div className="mt-6">
-            <Detail
-              label="Message"
-              value={data.message}
-            />
+            <Detail label="Message" value={data.message} />
           </div>
         </div>
       </div>
@@ -135,9 +96,7 @@ function Detail({ label, value }) {
         {label}
       </p>
 
-      <p className="mt-1 break-words text-[15px] text-[#222]">
-        {value || "-"}
-      </p>
+      <p className="mt-1 break-words text-[15px] text-[#222]">{value || "-"}</p>
     </div>
   );
 }
